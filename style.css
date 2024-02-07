@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Estilos para pantallas más pequeñas (hasta 768px) */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
+  
+    .sidebar ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .sidebar li {
+      margin-right: 10px;
+    }
+  }
